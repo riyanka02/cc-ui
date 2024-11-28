@@ -1,0 +1,47 @@
+body::before {
+  content: 'emilycarter967@gmail.com';  /* Replace with your actual email */
+  position: absolute;
+  top: 50%;  /* Adjust this for vertical centering */
+  left: 50%;  /* Adjust this for horizontal centering */
+  transform: translate(-50%, -50%) rotate(-45deg);  /* Optional: Rotates the text */
+  font-size: 78px;
+  color: rgba(0, 0, 0, 0.1);  /* Adjust opacity of the watermark */
+  pointer-events: none;  /* Prevent interaction with the watermark */
+  z-index: -1;  /* Ensure it's behind other content */
+  user-select: none;  /* Prevent selecting the watermark text */
+  white-space: nowrap;
+  letter-spacing: 0.2rem;  /* Optional: Adds spacing between letters */
+}
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.content {
+  width:100%;
+  display: flex;
+  gap: 20px;
+
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    width:100%;
+  }
+}
+@media (min-width: 300px) and (max-width: 520px) {
+  .app{
+    width:600px;
+  }
+}
+@media (min-width: 521px) and (max-width: 767px) {
+  .app{
+    width:700px;
+  }
+}
+@media (min-width: 712px) and (max-width: 767px) {
+.app{
+   width:740px;
+}
+}
